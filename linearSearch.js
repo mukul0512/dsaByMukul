@@ -6,6 +6,7 @@ function linearSearch(arr, target) {
             return i;
         }
     }
+    return -1;
 }
 
 let res = linearSearch(arr, target);
