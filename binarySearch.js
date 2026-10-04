@@ -5,8 +5,8 @@ function binarySearch(nums, target) {
     let right = nums.length - 1;
     while (right >= left) {
         let middle = Math.floor((left + right) / 2);
-        if (target == nums[middle]) return middle;
-        else if (target < middle) {
+        if (target === nums[middle]) return middle;
+        else if (target < nums[middle]) {
             right = middle - 1;
         }
         else {
