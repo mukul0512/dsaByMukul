@@ -8,12 +8,17 @@ function selectionSort(arr) {
                 min = j;
             }
         }
-        let temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
+        if (min != i) {
+            let temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
+        }
     }
     return arr;
 }
 
 let res = selectionSort(arr);
 console.log(res);
+
+// Time complexity = O(n * n)
+// Space complexity = O(1)
