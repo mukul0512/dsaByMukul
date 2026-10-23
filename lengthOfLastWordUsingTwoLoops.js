@@ -1,4 +1,11 @@
+/*
+function lengthOfLastWord(s) {
+    s = s.trim();
+    s = s.split(" ");
+    return s[s.length - 1].length;
+};
 
+*/
 function lengthOfLastWord(s) {
     // Step 1: Skip all spaces at the end
     let n = s.length - 1;
